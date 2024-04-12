@@ -1,0 +1,40 @@
+R11: O jogo deve conter um fundo infinito que se move.
+R01: O jogador deve ser capaz de controlar a direção de uma nave espacial para a esquerda e direita, cima e baixo, utilizando as teclas direcionais "AWSD".
+R14: O movimento do jogador deve ficar contido em um retângulo que representa metade da tela na posição oposta onde os inimigos estão sendo gerados
+R02: O jogador deve ser capaz de atirar projéteis para a direita utilizando o mouse ou a tecla "Espaço".
+R03: O jogo deve apresentar inimigos que se movem em direção ao jogador na horizontal.
+R04: O inimigo deve atirar projéteis a intervalos aleatórios na direção em que o jogador está se movendo.
+R07: O jogador tem 3 chances de ser acertado antes de receber uma tela de "game over", o número de chances deve ser mostrado na tela.
+R05: O jogo deve gerar inimigos fora da área visível a intervalos aleatórios e em posições aleatórias.
+R15: O jogador deve receber 5 pontos por inimigo atingido
+R06: O jogo deve rastrear e mostrar a pontuação do jogador e atualizá-la à medida que o jogador acerta inimigos.
+R08: O jogo deve ter uma tela inicial.
+R09: O jogo deve ter uma tela de "game over".
+R10: O jogo deve ter uma tela de "win" que deve ser mostrada quando o jogador acumula 1000 pontos.
+R12: O jogo deve conter efeitos sonoros para tiros e impactos.
+R13: O jogo deve conter música de fundo.
+
+R11: The game must contain an infinite background that moves.
+R01: The player must be able to control the direction of a spaceship left and right, up and down, using the directional keys "AWSD".
+R14: The player's movement must be contained within a rectangle representing half of the screen at the opposite position where enemies are being generated.
+R02: The player must be able to shoot projectiles to the right using the mouse or the "Space" key.
+R03: The game must present enemies that move towards the player horizontally.
+R04: The enemy must shoot projectiles at random intervals in the direction the player is moving.
+R05: The game must generate enemies outside the visible area at random intervals and in random positions.
+R07: The player has 3 chances to be hit before receiving a "game over" screen; the number of chances must be shown on the screen.
+R09: The game must have a "game over" screen.
+R15: The player must receive 5 points for each enemy hit.
+R06: The game must track and display the player's score and update it as the player hits enemies.
+R10: The game must have a "win" screen that should be shown when the player accumulates 1000 points.
+R08: The game must have an initial screen.
+R12: The game must contain sound effects for shots and impacts.
+R13: The game must contain background music.
+
+
+Assets: 
+	2d
+		Jogador, projetil,  inimigos, background
+	Sound
+		Tiro, impacto, musica fundo
+	https://opengameart.org/content/fast-fight-battle-music
+	Kenny
