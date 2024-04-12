@@ -1,4 +1,4 @@
-R11: O jogo deve conter um fundo infinito que se move.
+3R11: O jogo deve conter um fundo infinito que se move.
 R01: O jogador deve ser capaz de controlar a direção de uma nave espacial para a esquerda e direita, cima e baixo, utilizando as teclas direcionais "AWSD".
 R14: O movimento do jogador deve ficar contido em um retângulo que representa metade da tela na posição oposta onde os inimigos estão sendo gerados
 R02: O jogador deve ser capaz de atirar projéteis para a direita utilizando o mouse ou a tecla "Espaço".
