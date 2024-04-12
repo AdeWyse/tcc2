@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     private float screenWidth;
     private float screenHeigth;
 
-
     // Start is called before the first frame update
     void Start()
     {
