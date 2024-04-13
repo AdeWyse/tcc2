@@ -10,14 +10,12 @@ public class PlayerController : MonoBehaviour
     public int life = 3;
     public int points = 0;
 
-    public AudioSource audioImpact;
-
     public ScenesController scenesController;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
-        audioImpact = GameObject.Find("Impact").GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
