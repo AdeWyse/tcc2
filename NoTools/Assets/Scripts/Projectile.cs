@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     public float movingDirection = 1;
 
     private float screenWidth;
+
+    public AudioSource audioImpact;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,11 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.layer == 6)
+        {
+            audioImpact = GameObject.Find("Impact").GetComponent<AudioSource>();
+            audioImpact.Play();
+        }
         Destroy(gameObject);
     }
 }

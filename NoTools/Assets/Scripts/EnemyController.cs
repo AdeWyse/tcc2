@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    public AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,8 @@ public class EnemyController : MonoBehaviour
         {
             PlayerController player = GameObject.Find("Player").GetComponent<PlayerController>();
             player.points += 5;
+            audio = GameObject.Find("Impact").GetComponent<AudioSource>();
+            audio.Play();
             Destroy(gameObject);
         }
            
