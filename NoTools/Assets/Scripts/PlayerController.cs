@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private bool canShoot = true;
 
     public int life = 3;
+    public int points = 0;
     // Start is called before the first frame update
     void Start()
     {

@@ -44,4 +44,15 @@ public class EnemyController : MonoBehaviour
         projectile.GetComponent<Projectile>().movingSpeed = movingSpeed + 2f;
         Invoke("Shoot", Random.Range(1.0f, 3.0f));
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 3 || collision.gameObject.layer == 6) // 3 - Player | 6 - PlayerProjectile
+        {
+            PlayerController player = GameObject.Find("Player").GetComponent<PlayerController>();
+            player.points += 5;
+            Destroy(gameObject);
+        }
+           
+    }
 }
