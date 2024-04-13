@@ -36,16 +36,15 @@ public class ScrollingBackground : MonoBehaviour
         background1.Translate(new Vector3(scrollSpeed * Time.deltaTime, 0f, 0f));
         background2.Translate(new Vector3(scrollSpeed * Time.deltaTime, 0f, 0f));
 
-        // Check if B1 is off-screen and invisible
-        if (mainCamera.WorldToViewportPoint(background1.position).x * 10 < viewportMinBounds.x)
+        // Check if B1 is off-screen and invisible 
+        if (background1.position.x < viewportMinBounds.x * 2)
         {
-
             // Teleport B1 to the right of B2 (using stored initial positions)
-            background1.position = new Vector3 (background2InitialPosition.x - 1, background1.position.y, background1.position.z);
+            background1.position = new Vector3 (background2InitialPosition.x, background1.position.y, background1.position.z);
         }
 
         // Check if B2 is off-screen and invisible
-        if (mainCamera.WorldToViewportPoint(background2.position).x * 10 < viewportMinBounds.x)
+        if (background2.position.x < viewportMinBounds.x * 2)
         {
             // Teleport B2 to the right of the combined width (using stored positions)
             background2.position = background2InitialPosition;

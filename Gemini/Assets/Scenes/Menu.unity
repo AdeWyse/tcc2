@@ -134,6 +134,30 @@ PrefabInstance:
       propertyPath: m_text
       value: Start
       objectReference: {fileID: 0}
+    - target: {fileID: 7980412878794355028, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980412878794355028, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980412878794355028, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980412878919700580, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980412878919700580, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980412878919700580, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -128
+      objectReference: {fileID: 0}
     - target: {fileID: 7980412879389831259, guid: c46c1f481f211124bb04377a6bc6577c, type: 3}
       propertyPath: m_Name
       value: UI
