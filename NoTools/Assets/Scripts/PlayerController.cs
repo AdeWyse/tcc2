@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public int life = 3;
     public int points = 0;
+
+    public ScenesController scenesController;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if(life <= 0)
         {
-            ScenesController.ChangeScene("GameOver");
+            scenesController.ChangeScene("GameOver");
         }
     }
 }

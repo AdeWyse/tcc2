@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-static public class ScenesController 
+ public class ScenesController : MonoBehaviour
 {
-    public static  void ChangeScene(string scene)
+    public void ChangeScene(string scene)
     {
         Cursor.visible = true;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
 
-    public static void Exit()
+    public void Exit()
     {
         Application.Quit();
     }
