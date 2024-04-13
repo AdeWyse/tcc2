@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1301415180
+--- !u!1001 &977371698
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9140153211263134124, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
       propertyPath: m_text
-      value: Try Again?
+      value: Go Again?
       objectReference: {fileID: 0}
     - target: {fileID: 9140153211263134124, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
       propertyPath: m_fontSize
@@ -198,41 +198,9 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 9140153211456883167, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 121.2466
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211456883167, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.8583
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211456883167, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 110.100006
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211651923091, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 41.4518
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211651923091, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211651923091, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 67
-      objectReference: {fileID: 0}
     - target: {fileID: 9140153211904457653, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
       propertyPath: m_text
-      value: GAme over
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211904457653, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.047058824
-      objectReference: {fileID: 0}
-    - target: {fileID: 9140153211904457653, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278193343
+      value: You won!!!
       objectReference: {fileID: 0}
     - target: {fileID: 9140153211904457654, guid: 4d9309d5400cb0d4e911daea3f20429b, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -14,13 +14,14 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         Shoot();
+        CheckPoints();
     }
 
     private void Shoot()
@@ -58,6 +59,14 @@ public class PlayerController : MonoBehaviour
         if(life <= 0)
         {
             scenesController.ChangeScene("GameOver");
+        }
+    }
+
+    private void CheckPoints()
+    {
+        if(points >= 100)
+        {
+            scenesController.ChangeScene("Win");
         }
     }
 }
