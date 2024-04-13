@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int points)
     {
         score += points;
-        scoreText.text = "Score: " + score; // Update score text
+        scoreText.text = score.ToString(); // Update score text
 
         if (score >= 100)
         {
