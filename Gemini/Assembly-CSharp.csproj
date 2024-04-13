@@ -59,6 +59,8 @@
     <Compile Include="Assets\Scripts\ScrollingBackground.cs" />
     <Compile Include="Assets\Scripts\SpaceshipMovementShooting.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
