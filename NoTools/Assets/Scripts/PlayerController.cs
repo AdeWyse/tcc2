@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject projectile;
+    public GameObject projectilePrefab;
     private bool canShoot = true;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                Instantiate(projectile, transform.position, Quaternion.identity);
+                Instantiate(projectilePrefab, transform.position, Quaternion.identity);
                 canShoot = false;
                 Invoke("UnlockShoot", 0.3f);
             }

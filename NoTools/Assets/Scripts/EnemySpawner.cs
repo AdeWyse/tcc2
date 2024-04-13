@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 startPosition = new Vector3(screenWidth + 2, Random.Range(-screenHeigth, screenHeigth), 0);
         Instantiate(enemyPrefab, startPosition, Quaternion.identity);
-        Invoke("SpawnEnemy", Random.Range(0.5f, 2.0f))
+        Invoke("SpawnEnemy", Random.Range(1f, 2.0f))
             ;
     }
 }
