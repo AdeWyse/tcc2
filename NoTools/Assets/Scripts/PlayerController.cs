@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject projectilePrefab;
     private bool canShoot = true;
+
+    public int life = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +37,24 @@ public class PlayerController : MonoBehaviour
     private void UnlockShoot()
     {
         canShoot = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 7 || collision.gameObject.layer == 8)// 7 = Enemy | 8 = EnemyProjectile
+        {
+            Destroy(collision.gameObject);
+            life--;
+            CheckAlive();
+
+        }
+    }
+
+    private void CheckAlive()
+    {
+        if(life <= 0)
+        {
+            ScenesController.ChangeScene("GameOver");
+        }
     }
 }
