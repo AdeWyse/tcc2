@@ -31,4 +31,11 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision) // Use OnCollisionEnter2D for 2D collisions
+    {
+        // Destroy the projectile on collision
+        Destroy(gameObject);
+    }
 }
+
+
