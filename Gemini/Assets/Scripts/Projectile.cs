@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour
         projectileRigidbody = GetComponent<Rigidbody2D>();
 
         // Set initial velocity based on projectileSpeed sign
-        projectileRigidbody.velocity = Vector2.right * Mathf.Sign(projectileSpeed) * projectileSpeed;
+        projectileRigidbody.velocity = Vector2.right * projectileSpeed;
 
         // Get the main camera
         mainCamera = Camera.main;

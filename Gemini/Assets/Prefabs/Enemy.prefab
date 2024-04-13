@@ -98,6 +98,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpeed: 5
+  playerTransform: {fileID: 0}
+  projectilePrefab: {fileID: 1057973939570919064, guid: 7e434c2b6dd1e604386c8d28ee9729db, type: 3}
+  fireRateMin: 1
+  fireRateMax: 3
 --- !u!50 &5698841069607535654
 Rigidbody2D:
   serializedVersion: 4
