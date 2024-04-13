@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro; // For TextMeshPro elements
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,7 +18,12 @@ public class GameManager : MonoBehaviour
     public void AddScore(int points)
     {
         score += points;
-        scoreText.text = score.ToString(); // Update score text
-        // Debug.Log("Score: " + score); // Optional placeholder for debugging
+        scoreText.text = "Score: " + score; // Update score text
+
+        if (score >= 100)
+        {
+            // Load Win scene
+            SceneManager.LoadScene("Win");
+        }
     }
 }
