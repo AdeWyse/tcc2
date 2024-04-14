@@ -18,7 +18,6 @@ public class PlayerHealth : MonoBehaviour
     {
         remainingChances--;
         UpdateChancesUI();
-
         if (remainingChances <= 0)
         {
             // Load the GameOver scene

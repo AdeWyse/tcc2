@@ -66,4 +66,24 @@ public class EnemyMovement : MonoBehaviour
         Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
         return screenPos.x < 0;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Increase the score when an enemy collides with the player
+            FindObjectOfType<ScoreManager>().AddPoints(5);
+            // Destroy the enemy
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.CompareTag("PlayerProjectile"))
+        {
+            // Increase the score when an enemy is hit by a player projectile
+            FindObjectOfType<ScoreManager>().AddPoints(5);
+            // Destroy the enemy
+            Destroy(gameObject);
+            // Destroy the projectile
+            Destroy(collision.gameObject);
+        }
+    }
 }
