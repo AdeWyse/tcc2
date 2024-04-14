@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8333903416408735801}
   m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9fb58da224fa6f43b2f1286f765f035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyProjectilePrefab: {fileID: 7543209545079616025, guid: 57e12dd737df12049a01bcdca2e40766, type: 3}
+  minShootInterval: 1
+  maxShootInterval: 3
+  minEnemySpeed: 3
+  maxEnemySpeed: 5
+  minProjectileSpeedOffset: 2
+  maxProjectileSpeedOffset: 4
