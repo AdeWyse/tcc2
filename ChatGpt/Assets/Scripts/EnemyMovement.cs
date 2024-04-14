@@ -71,6 +71,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            SoundManager soundManager = FindObjectOfType<SoundManager>();
+            if (soundManager != null)
+            {
+                soundManager.PlayImpactSound();
+            }
             // Increase the score when an enemy collides with the player
             FindObjectOfType<ScoreManager>().AddPoints(5);
             // Destroy the enemy
@@ -78,6 +83,11 @@ public class EnemyMovement : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("PlayerProjectile"))
         {
+            SoundManager soundManager = FindObjectOfType<SoundManager>();
+            if (soundManager != null)
+            {
+                soundManager.PlayImpactSound();
+            }
             // Increase the score when an enemy is hit by a player projectile
             FindObjectOfType<ScoreManager>().AddPoints(5);
             // Destroy the enemy

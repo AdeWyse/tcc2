@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        // Destroy the projectile
+        Destroy(gameObject);
+    }
+
     private void Update()
     {
         CheckOutOfBounds();
@@ -16,9 +24,5 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(gameObject);
-    }
 }
+
